@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<meta 
+      title="Elizascript" 
+      package="com.distractionware.elizascript" 
+      version="1.0.0" 
+      company="Terry Cavanagh" 
+  />
+	
+	<app 
+      main="Main" 
+      path="bin" 
+      file="elizascript" 
+      preloader="Preloader"
+   />
+	
+	<window
+      width="768" height="480" unless="mobile" 
+   ></window>
+   
+	<window
+      fps="60"
+      background="0x000000"
+      orientation="landscape"
+      hardware="true"
+      vsync="true"
+   ></window>
+   
+	<window
+      antialiasing="0" 
+      if="cpp"
+   ></window>
+   
+	<source path="src" />
+	
+	<haxelib name="openfl" />
+	
+  <assets path="data" exclude="*.svg|*.mp3|*.ogg|*.wav" />
+	<assets path="data/sounds/mp3" rename="data/sounds" if="flash"/> 
+	<assets path="data/sounds/ogg" rename="data/sounds" unless="flash"/> 
+	<icon path="data/openfl.svg" />
+</project>

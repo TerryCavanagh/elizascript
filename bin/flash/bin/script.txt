@@ -1,0 +1,311 @@
+#title Elizascript
+#author Terry Cavanagh
+#website www.distractionware.com
+ 
+#botname Liz
+#showname
+#botcol 0000BB
+
+#chatsound 0
+#typespeed 3
+
+[start]{
+  #next
+  #botcol 55BB55
+  #showcursor
+  #sound 1
+  
+  Joining channel #elizascript-help{
+		#botcol 0000BB
+    #showname
+    #delay 90
+    #next
+    
+    Oh, Hey hey! :){
+    	#next
+      
+      I thought this channel was totally dead, lol{
+      	#delay 45
+        
+        Are you making elizascript bots too?{
+        	"yes", "yep", "yea", "yip", "ya", "sure", "maybe"{
+          	Cool! Let me know if I can help!{
+              "thanks"{
+                no prob!
+              }
+            }
+          }
+                    
+          "no", "na", "naw", "nope"{
+          	Oh, ok. Just lost then? :P{
+              "yes", "yep", "yea", "yip", "ya", "sure", ":)"{
+                fair nuff!
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  #break
+}
+
+cool!
+totally
+hm hm
+yep
+oh? tell me more
+
+"start", "help", "hint", "hints", "elizascript"{
+  [!helpme]{
+    #next
+    there's, like, a tutorial that explains the basics
+    {
+      #next
+      best thing to do is probably just to read that and come back
+      {
+        once you've done that, I can tell you about a few tricks... [helpme]
+      }
+    }
+  }
+  [helpme]{
+    Have you read the tutorial? It's a bit of a mess, but there's a lot in it.
+    You know you can just read the script for any chatbot you see?
+  }
+}
+
+"flag", "nested", "bracket", "flags", "brackets"{
+  Flags are confusing :(
+  I get lost in brackets a lot :(
+  it's really easy to lose track of them
+}
+
+"hash", "hashtag", "tag", "#"{
+  I can never get them to work myself, sorry 
+}
+
+"trick", "secret", "tricks", "secrets"{
+  [!nomoretricks]{
+    [!trickspeech]
+    {
+      #next
+      Oh, right! 
+      {
+        #next
+        So, there's loads of tricks with # commands
+        {
+          #next
+          #delay 90
+          They don't just have to be at the start of the script! [trickspeech]
+          {
+            #next
+            So, like, you can put them inside those curly brackets
+            {
+              And change stuff like colours and names as you go!
+            }    
+          }
+        }
+      }
+    }
+    
+    [trickspeech] { 
+      #next
+      You want more? Hmm... 
+      {
+        #next
+        Oh, you can play lots of different sounds with the sound hashtag
+        {
+          tho' most of them are pretty useless [!trickspeech] [nomoretricks]
+        }
+      }
+    }
+  }
+  [nomoretricks]{
+    Can't think of anything else right now.
+    Hmm, sorry, I'm drawing a blank :(
+  }
+}
+
+"tutorial"{
+  I know, blah blah blah, right?
+}
+
+
+"script", "scripts"{
+  you can figure out a lot by reading other chatbot's scripts
+  how's your chatbot going?
+}
+
+"useless"{
+  Yeah it doesn't really do very much I think
+}
+
+"sound", "sounds"{
+  I think most of them are from something called Klik and Play?
+  I can't imagine using most of the sounds.
+  The sounds are kinda weird
+  The thing would load so much faster if it wasn't for those stupid sounds
+}
+
+"online", "talk", "chat"{
+  do you spend a lot of time online?
+  I really like talking to people
+}
+
+"colour", "color", "colours", "colors"{
+   [!hexcolours]{
+     #next
+     you have to do colours as hexcodes, like{
+       #next
+       FFFFFF is white and FF0000 is red{
+         I always just look them up online [hexcolours]
+       }
+     }
+   }
+ }
+
+"stuck", "problem"{
+  Hmmm... what do you think?
+  why do you ask?
+  what's the problem?
+  ok, tell me more
+}
+
+"stupid", "hate", "hard", "confusing"{
+  yeah it can be a bit confusing sometimes
+}
+
+"feel"{
+  So, um, do you often feel that way?
+}
+
+"dream", "sleep", "night", "dreams" {
+  I never remember my dreams :(
+}
+
+"chatbot", "bot", "robot", "fake", "not real", "computer", "machine"{
+  [!notachatbot]{
+    Did somebody tell you I was a chatbot? I'm not a chatbot :( [notachatbot]
+    {
+      "you are", "yes"{
+        as if!
+      }
+    }
+  }
+  [notachatbot]{
+    I'm not listening nyah nyah nyah nyah
+    I'm real :(
+    :(
+  }
+}
+
+"font"{
+  sorry I think we're stuck with the weird DOS font
+}
+
+"sorry"{
+  it's ok
+  whatever
+}
+
+"making", "make"{
+  [!psychiatrist]{
+    #next
+    I've been trying to make a psychiatrist thing
+    {
+      the trick is to make it ask a lot of questions [psychiatrist]
+    }
+  }
+  [psychiatrist]
+  {
+    How does that work?
+    oh yeah?
+  }
+}
+
+"liz", "about you", "are you"{
+  [enough]{
+    Eh, I think I've talked enough about myself... What about you?
+    We were totally discussing you, not me.
+  }
+  [!enough]{
+    Huh, you're asking about me?
+    {
+      "yes", "yep", "yea", "ya", "sure", ":)"{
+        [!like_elizascript]{ I just really like elizascript. It makes sense to me, you know? [like_elizascript] }
+        [!make_chatbots] { I make chatbots! [make_chatbots] [enough] }
+      }
+
+      ah, ok
+    }
+  }
+}
+
+"friend"{
+  Sure :)
+}
+
+":)"{
+ :D
+}
+
+":D"{
+ XD
+}
+
+"XD"{
+  =D
+}
+
+"=D"{
+ :)
+}
+ 
+"question", "psychiatrist", "questions"{
+  do you think a chatbot should ask a lot of questions?
+  how many questions is too many questions?
+}
+
+"what", "how", "why", "where"{
+  are you sure?
+  do you care about that?
+  is that something you're interested in?
+  what do you really wanna know?
+  what makes you think that?
+  I dunno!
+  does that, like, bother you?
+  Yeah it's confusing
+  I'm not sure, sorry :(
+}
+
+"excited", "happy", "eager"{
+  me too!
+  ahhh so excited!
+}
+
+"sad"{
+  Oh, I'm sorry :(
+  there there :(
+  :(
+}
+
+"yes", "yep", "yea", "yah", "sure", "maybe"{
+  you seem very sure!
+  but are you sure?
+  really?
+}
+
+"terry"{
+  Who's that?
+}
+
+"they"{
+  dunno, sorry
+}
+
+"hello", "hey", "hi"{
+  Hey!
+  Hiya!
+  Hey hey!
+}
